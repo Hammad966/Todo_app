@@ -1,19 +1,17 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import Manager from "./components/Manager";
+import Footer from "./components/Footer";
 
-import './App.css'
-import Login from './components/Login'
-import Profile from './components/Profile'
-import UserContextProvider from './context/UserContextProvider'
-
-function App() {
-  
-
+const App = () => {
   return (
-    <UserContextProvider>
-      <h1 className='font-bold mb-8'>React with Chai and share is important</h1>
-      <Login />
-      <Profile />
-    </UserContextProvider>
-  )
-}
+    <div>
+      <Navbar />
+        <Manager />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
